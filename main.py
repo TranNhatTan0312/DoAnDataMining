@@ -22,7 +22,7 @@ import pickle
 import numpy as np
 #For training
 def train() -> None:
-    with open('DoAnDataMining/MFG10YearTerminationData_2.csv') as f:
+    with open('MFG10YearTerminationData_2.csv') as f:
         df = pd.read_csv(f)
     df_filtered = df.replace('unknown',np.nan)
     df_filtered.dropna(inplace=True)
